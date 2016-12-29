@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<map>
+	<!--locator of page map info -->
+	<page pageName="Istuary.com.Web.pageAction.LoginPage">
+		<!--Locator lists -->
+		<locator type="name" timeOut="10" value="account">loginEmailInputBox</locator>
+		<locator type="xpath" timeOut="10" value="//div[@class='button-wrapper command']//button[@class='sign-button submit']">loginButton</locator>
+		<locator type="xpath" timeOut="10" value="//div[@class='top-nav-profile']//img[@class='Avatar']">profile</locator>
+		<locator type="name" timeOut="10" value="password">loginPasswordInputBox</locator>
+		<locator type="linkText" timeOut="30" value="登录">clickToLoginButton</locator>
+	</page>
+	
+	<page pageName="Istuary.com.Web.pageAction.UboLogin">
+		<!--Locator lists -->
+		<locator type="cssSelector" timeOut="10" value="html.ng-scope body main.ng-scope div.col-md-12.ng-scope div.container div.row.login-form div.col.col-sm-12.col-md-4 div.panel.animated div.input-with-icon.input-username input.ng-pristine.ng-valid.ng-empty.ng-touched">loginUserInputBox</locator>		
+		<locator type="xpath" timeOut="10" value="//div[@class='input-with-icon input-password']//input[@class='ng-pristine ng-untouched ng-valid ng-empty']">loginPwdInputBox</locator>
+		<locator type="linkText" timeOut="10" value="登录">loginButton</locator>
+		<locator type="xpath" timeOut="10" value="//div[@class='toast FadeInFast FadeOutSlow ng-binding ng-scope error']">erroeNotice</locator>
+	</page>
+</map>
